@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+body, html {
+    height: 100vh;
+    margin: 0;
+  }
+  .bg
+  {
+      position: relative;
+      background-image: url(assets/images/background-1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      z-index: -1;
+  } 
+  .bg::after 
+{
+    content: '';
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to right, #003a9e 0%, #003a9c 100%);
+    opacity: 0.2;
+}
+#wrapper
+{
+    float: left;
+    width: 100%;
+}
+.container
+{
+    max-width: 1310px;
+}
+#curve
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+#curve path
+{
+    margin: 0;
+    padding: 0;    
+} 
+
+.card
+{
+    position: relative;
+    box-shadow: 1px 1px 5px 1px #666;
+}
+.card
+{
+    transform: rotate(-5deg);   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #ddd;
+}
